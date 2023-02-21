@@ -23,12 +23,15 @@
         .text-data {
             font-family: serif;
             position: absolute;
-            top: 25%;
-            left: 50%;
-            transform: translate(-20%, -9%);
+            top: 18%;
+            left: 42%;
             font-size: 16px;
-            line-height: 5px;
+            line-height: 21px;
             color: black;
+        }
+
+        .text-data span {
+            display: block !important;
         }
     </style>
 </head>
@@ -38,13 +41,13 @@
         <img class="img-data" src="<?= base_url() ?>assets/images/KARTU_PELAJAR_DEPAN.svg" alt="kartu pelajar">
         <div class="text-data">
             <?php foreach ($tampil as $row) { ?>
-            <p><?= $row->nama_siswa ?></p>
-            <p><?= $row->jenis_kelamin ?></p>
-            <p><?= $row->nisn ?></p>
-            <p><?= $row->tempat_lahir ?>, <?= $row->tgl_lahir ?></p>
-            <p><?= $row->agama ?></p>
-            <p><?= $row->jurusan ?></p>
-            <p><?= $row->alamat ?></p>
+            <span><?= $row->nama_siswa ?></span>
+            <span><?= $row->jenis_kelamin ?></span>
+            <span><?= $row->nisn ?></span>
+            <span><?= $row->tempat_lahir ?>, <?= $row->tgl_lahir ?></span>
+            <span><?= $row->agama ?></span>
+            <span><?= $row->jurusan ?></span>
+            <span><?= $row->alamat ?></span>
             <?php } ?>
         </div>
     </div>
